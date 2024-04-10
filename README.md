@@ -18,3 +18,21 @@ but you need to go beyond that.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+### Response
+
+There is a large chunk of repeated work when recursively calling the $e(n)$ function.
+Every non-basic recursive call down the $e(n)$ function calls the factorial
+function, which we can see will do a lot of repeated work if we call said
+function multiple times with $n$ decrementing by 1 each time, for
+$(n + 1)! = n! * (n + 1)$.
+
+We can avoid this repeated work by the factorial in a variable, which exists
+in constant memory. For each iteration of the Euler function, we multiply the
+variable by $i$ in the $i$th iteration from $1$ to $n$ and add 1 divided by
+the variable to an accumulator to obtain an approximation of Euler's number.
+
+In the Euler function, we iterate from $1$ to $n$
+to obtain the approximation for $e$ with constant statements inside the iterative loop. The worst-case scenario is that $n$ may be greater than $1$,
+so we'll need to iterate through the for-loop. The worst-case big $\Theta$ 
+complexity of the algorithm therefore turns out to be $T(n) \in \Theta(n)$. 
