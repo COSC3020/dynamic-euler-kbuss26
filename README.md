@@ -29,7 +29,7 @@ $(n + 1)! = n! * (n + 1)$.
 
 We can avoid this repeated work by the factorial in a variable, which exists
 in constant memory. For each iteration of the Euler function, we multiply the
-variable by $i$ in the $i$th iteration from $1$ to $n$ and add 1 divided by
+variable by $i$ in the ith iteration from $1$ to $n$ and add 1 divided by
 the variable to an accumulator to obtain an approximation of Euler's number.
 
 In the Euler function, we iterate from $1$ to $n$
