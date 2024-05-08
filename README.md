@@ -36,3 +36,6 @@ In the Euler function, we iterate from $1$ to $n$
 to obtain the approximation for $e$ with constant statements inside the iterative loop. The worst-case scenario is that $n$ may be greater than $1$,
 so we'll need to iterate through the for-loop. The worst-case big $\Theta$ 
 complexity of the algorithm therefore turns out to be $T(n) \in \Theta(n)$. 
+
+### Sources
+- main.yml file is reused from other COSC-3020 exercises
